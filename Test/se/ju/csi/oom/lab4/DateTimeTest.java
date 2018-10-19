@@ -12,15 +12,14 @@ public class DateTimeTest {
 	}
 
 	@Test
-	public void ToStringTest() {
-		DateTime testDateTime = new DateTime(2018, 10, 19, 10, 15, 30);
-		assertEquals(testDateTime.toString(), "2018-10-19 10:15:30");
+	public void toStringTest() {
+		DateTime testDateTime = new DateTime(1994, 01, 29, 10, 10, 10);
+		assertEquals(testDateTime.toString(), "1994-01-29 10:10");
 	}
-	
 	@Test
-	public void dateTimeStringTest() {
-		DateTime testDateTime = new DateTime("2018-10-19 10:15:30");
-		DateTime compareDateTime = new DateTime(2018, 10, 19, 10, 15, 30);
+	public void dateTimeFromStringTest(){
+		DateTime testDateTime = new DateTime("1994-01-29 10:10:10");
+		DateTime compareDateTime = new DateTime(1994, 01, 29, 10, 10, 10);
 		assertEquals(testDateTime.toString(), compareDateTime.toString());
 	}
 
