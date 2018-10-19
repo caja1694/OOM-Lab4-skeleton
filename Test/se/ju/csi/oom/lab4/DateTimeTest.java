@@ -14,7 +14,7 @@ public class DateTimeTest {
 	@Test
 	public void toStringTest() {
 		DateTime testDateTime = new DateTime(1994, 01, 29, 10, 10, 10);
-		assertEquals(testDateTime.toString(), "1994-01-29 10:10:10");
+		assertEquals(testDateTime.toString(), "1994-01-29 10:10");
 	}
 	@Test
 	public void dateTimeFromStringTest(){
