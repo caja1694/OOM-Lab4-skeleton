@@ -21,7 +21,6 @@ public class DateTimeTest {
 		DateTime testDateTime = new DateTime("1994-01-29 10:10:10");
 		DateTime compareDateTime = new DateTime(1994, 01, 29, 10, 10, 10);
 		assertEquals(testDateTime.toString(), compareDateTime.toString());
-		
 	}
 
 }
