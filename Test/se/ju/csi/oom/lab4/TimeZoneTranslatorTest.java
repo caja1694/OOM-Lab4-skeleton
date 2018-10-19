@@ -19,11 +19,11 @@ public class TimeZoneTranslatorTest {
 	public void testShiftTimeZone() {
 		DateTime Bilibompa = new DateTime(2018, 10, 07, 18, 0, 0);
 		Bilibompa = TimeZoneTranslator.shiftTimeZone(Bilibompa, 1, 3);
-		assertEquals(Bilibompa.toString(), "2018-10-07 20:00:00");
+		assertEquals(Bilibompa.toString(), "2018-10-07 20:00");
 		
 		DateTime test2 = new DateTime(2015, 12, 31, 21, 0, 0);
 		test2 = TimeZoneTranslator.shiftTimeZone(test2, -8, 1);
-		assertEquals(test2.toString(), "2016-01-01 06:00:00");
+		assertEquals(test2.toString(), "2016-01-01 06:00");
 		
 	}
 
